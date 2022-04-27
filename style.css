@@ -1,0 +1,131 @@
+@font-face {
+  font-family: poppins;
+  src: url(./fonts/poppins.woff);
+}
+
+.pKanan {
+  opacity: 0;
+  transform: translate(0, 50px);
+  transition: 1s;
+}
+
+.pKanan.pmuncul {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+* {
+	font-family: poppins;
+  font-size: 15px;
+}
+
+.container {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.container.kedua {
+  color: white;
+  opacity: 0;
+  background-color: white;
+  width: 100%;
+  transform: translate(-50px, 0);
+  transition: 1s;
+}
+
+.container.ketiga {
+  color: white;
+  opacity: 0;
+  background-color: white;
+  width: 100%;
+  transform: translate(0, 100px);
+  transition: 1s;
+}
+
+.container.hide {
+  color: white;
+  opacity: 0;
+  background-color: #CDAC9D;
+  width: 100%;
+  transform: translate(-50px, 0);
+  transition: 1s;
+}
+
+.container.transparan {
+  opacity: 0;
+  width: 100%;
+  transform: translate(0, 100px);
+  transition: 1s;
+}
+
+.container.kanan {
+  color: rgb(146, 146, 146);
+  opacity: 0;
+  background-color: #ECE5DD;
+  width: 100%;
+  transform: translate(0, -50px);
+  transition: 1s;
+}
+
+.container.barukanan {
+  color: rgb(146, 146, 146);
+  opacity: 0;
+  background-color: #ECE5DD;
+  width: 100%;
+  transform: translate(0, -50px);
+  transition: 1s;
+}
+
+.container.hide.muncul, .container.kanan.muncul, .container.barukanan.muncul, .container.kedua.muncul, .container.ketiga.muncul, .container.transparan.muncul {
+  opacity: 1;
+  transform: translate(0,0);
+}
+
+hr {
+  max-width: 300px;
+  border-top: 2px solid #999;
+}
+
+.header {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#icon {
+  width: 50px;
+  cursor: pointer;
+}
+
+span {
+  font-size: 12px;
+  color: #5f5f5f;
+  font-weight: 400;
+}
+
+.typed-text {
+  color: black;
+}
+
+.cursor {
+  background-color:white;
+}
+
+.cursor.blink {
+  display: inline-block;
+  width: 2px;
+  background-color: black;
+  margin-left: 0.1rem;
+  animation: blink 1s infinite;
+}
+
+.cursor.typing {
+  animation: none;
+}
+
+@keyframes blink {
+  0% { background-color: black; }
+  45% { background-color: black; }
+  50% { background-color: transparent; }
+  95% { background-color: transparent; }
+  100% { background-color: black; }
+}
